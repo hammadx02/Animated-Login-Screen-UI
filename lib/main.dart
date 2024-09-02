@@ -9,7 +9,6 @@ void main() async {
     MaterialApp(
       debugShowCheckedModeBanner: false,
       home: HomePage(),
-      title: "Animated-Login-Page-UI",
     ),
   );
   SystemChrome.setSystemUIOverlayStyle(
@@ -40,7 +39,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
     controller1 = AnimationController(
       vsync: this,
       duration: Duration(
-        seconds: 5,
+        seconds: 2,
       ),
     );
     animation1 = Tween<double>(begin: .1, end: .15).animate(
@@ -71,7 +70,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
     controller2 = AnimationController(
       vsync: this,
       duration: Duration(
-        seconds: 5,
+        seconds: 2,
       ),
     );
     animation3 = Tween<double>(begin: .41, end: .38).animate(CurvedAnimation(
