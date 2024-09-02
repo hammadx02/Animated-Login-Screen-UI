@@ -4,6 +4,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -151,7 +152,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                         padding: EdgeInsets.only(top: size.height * .1),
                         child: Text(
                           'Login',
-                          style: TextStyle(
+                          style: GoogleFonts.poppins(
                             color: Colors.white.withOpacity(.7),
                             fontSize: 30,
                             fontWeight: FontWeight.bold,
@@ -247,7 +248,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
             borderRadius: BorderRadius.circular(15),
           ),
           child: TextField(
-            style: TextStyle(color: Colors.white.withOpacity(.8)),
+            style: GoogleFonts.poppins(color: Colors.white.withOpacity(.8)),
             cursorColor: Colors.white,
             obscureText: isPassword,
             keyboardType:
@@ -261,7 +262,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
               hintMaxLines: 1,
               hintText: hintText,
               hintStyle:
-                  TextStyle(fontSize: 14, color: Colors.white.withOpacity(.5)),
+                  GoogleFonts.poppins(fontSize: 14, color: Colors.white.withOpacity(.5)),
             ),
           ),
         ),
@@ -289,7 +290,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
             ),
             child: Text(
               string,
-              style: TextStyle(color: Colors.white.withOpacity(.8)),
+              style: GoogleFonts.poppins(color: Colors.white.withOpacity(.8)),
             ),
           ),
         ),
