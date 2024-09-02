@@ -167,7 +167,6 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          
                           component1(Icons.account_circle_outlined,
                               'Enter your user name', false, false),
                           component1(Icons.email_outlined, 'Enter your email',
@@ -311,7 +310,7 @@ class MyPainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
       ..shader = LinearGradient(
-        // Color(0xffC43990)
+              // Color(0xffC43990)
               colors: [Color(0xffFD5E3D), Color(0xffFD5E3D).withOpacity(0.50)],
               begin: Alignment.topLeft,
               end: Alignment.bottomRight)
