@@ -168,31 +168,33 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           component1(Icons.account_circle_outlined,
-                              'User name...', false, false),
-                          component1(
-                              Icons.email_outlined, 'Email...', false, true),
-                          component1(
-                              Icons.lock_outline, 'Password...', true, false),
+                              'Enter your user name', false, false),
+                          component1(Icons.email_outlined, 'Enter your email',
+                              false, true),
+                          component1(Icons.lock_outline, 'Enter your password',
+                              true, false),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               component2(
-                                'LOGIN',
+                                'Login',
                                 2.58,
                                 () {
                                   HapticFeedback.lightImpact();
                                   Fluttertoast.showToast(
-                                      msg: 'Login button pressed');
+                                    msg: 'Login button pressed',
+                                  );
                                 },
                               ),
                               SizedBox(width: size.width / 20),
                               component2(
-                                'Forgotten password!',
+                                'Forgot password!',
                                 2.58,
                                 () {
                                   HapticFeedback.lightImpact();
                                   Fluttertoast.showToast(
-                                      msg: 'Forgotten password button pressed');
+                                    msg: 'Forgot password button pressed',
+                                  );
                                 },
                               ),
                             ],
@@ -261,8 +263,8 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
               border: InputBorder.none,
               hintMaxLines: 1,
               hintText: hintText,
-              hintStyle:
-                  GoogleFonts.poppins(fontSize: 14, color: Colors.white.withOpacity(.5)),
+              hintStyle: GoogleFonts.poppins(
+                  fontSize: 14, color: Colors.white.withOpacity(.5)),
             ),
           ),
         ),
@@ -324,7 +326,6 @@ class MyPainter extends CustomPainter {
     return true;
   }
 }
-
 
 class MyBehavior extends ScrollBehavior {
   @override
