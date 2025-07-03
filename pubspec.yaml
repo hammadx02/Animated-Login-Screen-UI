@@ -12,7 +12,7 @@ dependencies:
   cupertino_icons: null
   flutter:
     sdk: flutter
-  fluttertoast: null
+  fluttertoast: ^8.2.12
   google_fonts: ^6.2.1
 
 dev_dependencies:
